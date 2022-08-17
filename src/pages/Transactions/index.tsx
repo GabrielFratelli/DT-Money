@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
+import { SearchForm } from "./components/SearchForm";
 
 import {
   PriceHighLight,
@@ -15,6 +16,7 @@ export const Transactions = () => {
       <Summary />
 
       <TransactionsContainer>
+        <SearchForm />
         <TransactionsTable>
           <tbody>
             <tr>
@@ -30,7 +32,7 @@ export const Transactions = () => {
               <td>
                 <PriceHighLight variant="outcome">- R$ 59,00</PriceHighLight>
               </td>
-              <td>ALimentação</td>
+              <td>Alimentação</td>
               <td>10/04/2022</td>
             </tr>
           </tbody>
